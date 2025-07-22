@@ -9,13 +9,13 @@ import { faHourglass2 } from "@fortawesome/free-regular-svg-icons";
 import Swal from "sweetalert2";
 import axios from "axios";
 let ContactList = () => {
-
+   const BASE_URL = import.meta.env.VITE_API_URL;
    let [state, setState] = useState({ loading: false, contacts: [], filterdContacts: [], errorMessage: '', text: '' })
 
    useEffect(() => {
 
 
-      axios.get("http://localhost:4000/contacts")
+        axios.get(`${BASE_URL}/contacts`)
          .then((response) => {
             setState(prevState => ({
                ...prevState,
@@ -47,7 +47,7 @@ let ContactList = () => {
          confirmButtonText: 'Yes, delete it!',
       }).then((result) => {
          if (result.isConfirmed) {
-            axios.delete(`http://localhost:4000/contacts/${contactid}`)
+            axios.delete(`${BASE_URL}/contacts/${contactid}`)
                .then((response) => {
                   if (response) {
                      Swal.fire('Deleted!', 'Contact deleted successfully.', 'success');

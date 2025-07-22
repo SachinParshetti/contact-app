@@ -6,7 +6,7 @@ import { Spinner } from "../spinner/spinner";
 import { toast } from "react-toastify"
 import axios from "axios";
 let EditContact = () =>{
-
+const BASE_URL = import.meta.env.VITE_API_URL;
    //  For updating data 
       let {_id} = useParams()
      
@@ -39,7 +39,7 @@ let EditContact = () =>{
         e.preventDefault()
         // ContactServices.updateContact(state.contact,contactId)
 
-        axios.put(`http://localhost:4000/contacts/${_id}`,state.contact)
+        axios.put(`${BASE_URL}/contacts/${_id}`,state.contact)
         .then(responce => {
           if(responce)
           {
@@ -60,8 +60,8 @@ let EditContact = () =>{
         const fetchContact = async () => {
             try {
                 setState(prevState => ({ ...prevState, loading: true }));
-                const contactRes = await axios.get(`http://localhost:4000/contacts/${_id}`);
-                const groupsRes = await axios.get(`http://localhost:4000/groups`);
+                const contactRes = await axios.get(`${BASE_URL}/contacts/${_id}`);
+                const groupsRes = await axios.get(`${BASE_URL}/groups`);
                 if (contactRes.data && groupsRes.data) {
                     setState(prevState => ({
                         ...prevState,

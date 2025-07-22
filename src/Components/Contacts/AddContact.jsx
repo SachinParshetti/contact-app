@@ -4,6 +4,7 @@ import { ContactServices } from "../../services/contactService";
 import { toast } from "react-toastify";
 import axios from "axios"
 let AddContact = () =>{
+  const BASE_URL = import.meta.env.VITE_API_URL;
      let [state,setState] = useState({
        loading:false,
        contact:{
@@ -29,7 +30,7 @@ let AddContact = () =>{
      }
 
      useEffect(()=>{
-           axios.get("http://localhost:4000/groups")
+           axios.get(`${BASE_URL}/groups`)
           .then(response => setState(prevState => ({...prevState,loading:false,group:response.data})))
           .catch(error => {
             console.error("Error fetching groups:", error);
@@ -42,22 +43,8 @@ let AddContact = () =>{
      {
         e.preventDefault()
 
-        // ContactServices.AddContact(state.contact)
-        // .then(response =>{
-        //   if(response){
-        //     // alert("Contact added successfully")
-        //     toast.success("Contact added successfull")
 
-        //       navigate('/')
-        //   }
-        
-        // })
-        // .catch((error)=>{
-        //   // alert("Failed adding Contact: " + error)
-        //   toast.error("Failed to dd contact",error)
-        //   })
-
-        axios.post("http://localhost:4000/contacts",state.contact)
+        axios.post(`${BASE_URL}/contacts`,state.contact)
         .then((response)=>{
           if(response.status === 201)
           {

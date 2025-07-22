@@ -5,7 +5,7 @@ import { ContactServices } from "../../services/contactService";
 import { Spinner } from "../spinner/spinner";
 import axios from "axios";
 let ViewContact = () => {
-
+const BASE_URL = import.meta.env.VITE_API_URL;
    let { _id } = useParams()
 
    let [contactInfo, setContactInfo] = useState({ loading: false, contact: {}, errorMessage: '' ,group:{}})
@@ -14,8 +14,8 @@ let ViewContact = () => {
       const fetchContactById = async () => {
          try {
             setContactInfo(prevState => ({ ...prevState, loading: true }));
-            const contactRes = await axios.get(`http://localhost:4000/contacts/${_id}`);
-            const groupRes = await axios.get(`http://localhost:4000/groups/${contactRes.data.group}`);
+            const contactRes = await axios.get(`${BASE_URL}/contacts/${_id}`);
+            const groupRes = await axios.get(`${BASE_URL}/groups/${contactRes.data.group}`);
             
             if (contactRes.data && groupRes.data) {
                setContactInfo({ loading: false, contact: contactRes.data, group: groupRes.data, errorMessage: '' });
@@ -42,7 +42,6 @@ let ViewContact = () => {
                      <div className="container">
                         <div className="row mt-2">
                            <div className="col">
-                              {/* <h1>id:{_id}</h1> */}
                               <h1 className="text-warning">Contacts Details</h1>
                               <p className='fst-italic'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit iure, doloribus tempora ad, ipsam commodi dolorem eius eaque non aspernatur quos reprehenderit, sunt porro. Consectetur sequi molestiae cupiditate modi debitis.</p>
                            </div>

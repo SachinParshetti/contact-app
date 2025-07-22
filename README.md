@@ -136,7 +136,7 @@ DELETE	/contacts/:id	Delete a contact
 📥 Import & Export Contacts
 📱 Progressive Web App (PWA)
 
-
+```
 
 ## 🙋‍♂️ Author  
 **Sachin Parashetti**  

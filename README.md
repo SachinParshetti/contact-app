@@ -11,8 +11,8 @@ A full-stack Contact Management application built using the **MERN stack**, allo
 
 ## 🌐 Live Demo
 
-- 🔸 Frontend: [https://your-contact-manager.netlify.app](https://your-contact-manager.netlify.app)  
-- 🔸 API Base: [https://contact-manager-api.onrender.com](https://contact-manager-api.onrender.com)
+- 🔸 Frontend: [https://your-contact-manager.netlify.app](https://contactmanagerapps.netlify.app/)  
+- 🔸 API Base: [https://contact-manager-api.onrender.com](https://contact-app-wwd5.onrender.com)
 
 ---
 
@@ -136,12 +136,12 @@ DELETE	/contacts/:id	Delete a contact
 📥 Import & Export Contacts
 📱 Progressive Web App (PWA)
 
-🙋‍♂️ Author
-Sachin Parashetti
+
+
+## 🙋‍♂️ Author  
+**Sachin Parashetti**  
 🧑‍💻 Passionate Full-Stack Developer | MERN | REST APIs | UI/UX
 
-- 📎 [GitHub – @SachinParashetti](https://github.com/SachinParashetti)  
+- 📎 [GitHub – @SachinParashetti](https://github.com/SachinParashetti)
 - 📎 [LinkedIn – sachin-parashetti](https://www.linkedin.com/in/sachin-parashetti-99b255259/)
-
-
-📧 Email: sachinparshettisp@gmail.com
+- 📧 Email: [sachinparshettisp@gmail.com](mailto:sachinparshettisp@gmail.com)

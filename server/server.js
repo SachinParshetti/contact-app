@@ -8,11 +8,14 @@ import mongoose from "mongoose";
 
 dotenv.config();
 
-
+app.use(cors({
+  origin: "https://contactmanagerapps.netlify.app",
+  credentials: true
+}));
 const app = express();
-app.use(cors());
 app.use(express.json());
 app.use(urlencoded({ extended: true }));
+
 
 app.use("/contacts", contactRouter);
 app.use("/groups", groupRouter);

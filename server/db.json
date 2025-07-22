@@ -1,0 +1,120 @@
+{
+  "contacts": [
+    {
+      "id": "1",
+      "name": "Sam karan",
+      "mobile": "7019390002",
+      "image": "https://cdn-icons-png.flaticon.com/512/9193/9193848.png",
+      "email": "sam@gmail.com",
+      "company": "Naresh IT",
+      "title": "Admin",
+      "group": "4"
+    },
+    {
+      "id": "2",
+      "name": "Ram",
+      "mobile": "8019390000",
+      "image": "https://appincoimbatore.com/wp-content/uploads/2023/05/man2.png",
+      "email": "sam@gmail.com",
+      "company": "Solitude Enterprices",
+      "title": "Electrician",
+      "group": "4"
+    },
+    {
+      "id": "4",
+      "name": "John Doe",
+      "mobile": "8923412434",
+      "image": "https://resources.revvity.com/images/bioproduction-customer-testimonial-avatars_800x800-03.png",
+      "email": "john@gmail.com",
+      "company": "L&T",
+      "title": "Softwear-developer",
+      "group": "3"
+    },
+    {
+      "id": "c1ae",
+      "name": "Sachin",
+      "mobile": "7019390002",
+      "image": "https://images.squarespace-cdn.com/content/v1/5e48156061c7e937527c83e4/03e863dc-9a81-43aa-9d6a-f107836d270b/Michael+Razavi+-+IP+Consulting+Group.png?format=2500w",
+      "email": "sachinparshetti@gmail.com",
+      "company": "Google",
+      "title": "Senior Developer",
+      "group": ""
+    },
+    {
+      "id": "ad7e",
+      "name": "Akshay",
+      "mobile": "9243965343",
+      "image": "https://cskgroup.com.au/wp-content/uploads/2023/05/Profile-Pic-Male.png",
+      "email": "akshay@gmail.com",
+      "company": "Google",
+      "title": "Senior Fronted Developer",
+      "group": "3"
+    },
+    {
+      "id": "5b73",
+      "name": "Samarth",
+      "mobile": "7585303443",
+      "image": "https://th.bing.com/th/id/OIP.sBkeWU3OZNvLJamw23b-fQHaHa?r=0&pid=ImgDet&w=201&h=201&c=7&cb=idpwebpc1",
+      "email": "samarth@gmail.com",
+      "company": "Google",
+      "title": "Devloper",
+      "group": ""
+    },
+    {
+      "id": "87b8",
+      "name": "kunal yadbole",
+      "mobile": "7904356544",
+      "image": "https://cdn-icons-png.flaticon.com/512/14663/14663195.png",
+      "email": "kunal@gmail.com",
+      "company": "Luther Corp's ",
+      "title": "Devloper",
+      "group": "3"
+    },
+    {
+      "id": "0e46",
+      "name": "Nehemya",
+      "mobile": "6304 524 253",
+      "image": "https://static.vecteezy.com/system/resources/previews/005/851/960/original/young-boy-concepts-vector.jpg",
+      "email": "nehemya@gmail.ocm",
+      "company": "Tata Tech",
+      "title": "Full stack Developer",
+      "group": "3"
+    },
+    {
+      "id": "65f7",
+      "name": "Thor",
+      "mobile": "539385848383",
+      "image": "https://miro.medium.com/v2/resize:fit:800/1*ZYtJmUDttL2NFOy2LncCrQ.jpeg",
+      "email": "godofthunder@asgard.com",
+      "company": "Asgard",
+      "title": "Protector",
+      "group": "5"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "Family"
+    },
+    {
+      "id": "2",
+      "name": "Colleague"
+    },
+    {
+      "id": "3",
+      "name": "Friend"
+    },
+    {
+      "id": "4",
+      "name": "Service"
+    },
+    {
+      "id": "5",
+      "name": "Social"
+    },
+    {
+      "id": "6",
+      "name": "Community"
+    }
+  ]
+}

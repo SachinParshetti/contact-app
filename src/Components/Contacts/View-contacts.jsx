@@ -1,7 +1,6 @@
 import React from "react";
 import { useEffect, useState, } from "react";
 import { Link, useParams } from "react-router-dom";
-import { ContactServices } from "../../services/contactService";
 import { Spinner } from "../spinner/spinner";
 import axios from "axios";
 let ViewContact = () => {

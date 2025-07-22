@@ -2,7 +2,6 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import ViewContact from "./View-contacts";
 import { useEffect, useState } from "react";
-import { ContactServices } from "../../services/contactService";
 import { Spinner } from "../spinner/spinner";
 import { toast } from "react-toastify";
 import { faHourglass2 } from "@fortawesome/free-regular-svg-icons";
